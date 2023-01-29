@@ -1,0 +1,67 @@
+.label {
+    text-align: left;
+    font-size: .9rem;
+    /* color: #f6f8fc; */
+    font-weight: bold;
+}
+.InputField input {
+    margin: .1rem 0;
+    width: 20rem;
+    height: 2.2rem;
+
+    text-align: center;
+    font-size: 1rem;
+
+    border: none;
+    border-radius: .5rem;
+    background-color: #f6f8fc;
+}
+.Input {
+    margin: .5rem 0;
+}
+
+.Left button {
+    margin-top: 1rem;
+    width: 100%;
+    /* height: 2rem; */
+    padding: .5rem;
+
+    color: white;
+    border: 2px solid black;
+    background-color: black;
+    border-radius: .5rem;
+    outline: none;
+
+    font-weight: bold;
+
+    transition: all .2s;
+}
+.Left button:hover {
+    color: black;
+    background-color: white;
+}
+
+.Right button {
+    background-color: #feddc6;
+    border: solid 2px #ff7923;
+    border-radius: .5rem;
+    outline: none;
+    color: #ff7923;
+
+    padding: .5rem 1rem;
+    margin: 0 .5rem;
+
+    font-weight: bold;
+
+    transition: all .2s;
+}
+.Right button:hover {
+    background-color: #ffbb8a;
+    color: white;
+}
+
+@media screen and (max-width: 1200px) {
+    .InputField input {
+        width: 100%;
+    }
+}

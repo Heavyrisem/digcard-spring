@@ -1,0 +1,26 @@
+.View .Right {
+    padding: 5rem;
+    /* display: flex; */
+    vertical-align: middle;
+}
+.info div {
+    /* display: table; */
+    /* margin: auto; */
+    /* table-layout: fixed; */
+    width: 100%;
+    text-align: left;
+
+    margin: 1.5rem;
+}
+.info div span {
+    height: 50px;
+}
+.Card div button {
+    display: inline;
+    width: auto;
+    /* font-weight: 500; */
+    margin: 0 1rem;
+    font-size: .5rem;
+    padding: 0.2rem 0.5rem;
+    /* float: right; */
+}

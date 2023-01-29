@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'BBTreeGB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+html, body {
+	margin: 0;
+	font-family: 'BBTreeGB', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-align: center;
+	height: 100vh;
+	background-color: #ffede1;
+}
+
+#root {
+	display: flex;
+	height: 100%;
+	vertical-align: middle;
+	transform : rotate(0.04deg); 
+}
+.Float {
+	display: flex;
+	margin: auto;
+	/* flex: .5; */
+
+	background-color: white;
+	
+	/* padding: 1rem; */
+	margin-top: auto;
+}
+
+.ViewTitle {
+	color: #1f1f1f;
+}
+
+.Left, .Right {
+	display: block;
+	padding: 10rem;
+}
+
+.Right {
+	background-color: #ffede1;
+}
+
+button {
+	cursor: pointer;
+}
+
+.description {
+    height: auto;
+    white-space: pre;
+    word-break: break-all;
+    position: relative;
+    top: 50%;
+    /*요소의 높이의 반(50%) 만큼 위로 이동*/
+    transform: translateY(-70%);
+}
+
+@media screen and (max-width: 1200px) {
+	body, html {height: 110vh;}
+	.Float {
+		display: block;
+		width: 90%;
+	}
+	.Float .Right, .Left {
+		padding: 3rem;
+	}
+	.description {
+		position: static;
+		transform: translateY(0);
+	}
+}
